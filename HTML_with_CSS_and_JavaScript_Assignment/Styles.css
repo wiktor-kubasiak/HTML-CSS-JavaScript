@@ -1,0 +1,63 @@
+*{
+	font-family: 'Orbitron', sans-serif;
+	}
+#left{
+	float: left;
+	width: 15%;
+	margin: 30px;
+	padding: 15px;
+	}
+#centre{
+	float: left;
+	width: 50%;
+	margin: 30px;
+	padding: 15px;
+	}
+footer{
+	clear: left;
+	text-align: center;
+	padding: 10px;
+	}
+button{
+	display: block;
+	}
+a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	margin: 15px;
+	background-color: DarkBlue;
+	color: Black;
+	}
+.hide{
+	display: none;
+	}
+#drop{
+	border: 5px outset;
+	color: Black;
+	background-color: DarkGreen;
+	}
+body{
+	width: 80%;
+	margin: auto;
+	background: darkgrey;
+	}
+h1{
+	text-align: center;
+	}
+.subMenu{
+	border: 2px ridge;
+	border-radius: 6px;
+	}
+html{
+	background: url('Justice_League_Logo.png'); /* Image Source: https://wall.alphacoders.com/wallpaper.php?i=763336&w=150&h=150&type=crop */
+	}
+a:hover{
+	background-color: Red;
+	}
+header, footer{
+	background-color: Purple;
+	}
+span{
+	font-weight: bold;
+	}
