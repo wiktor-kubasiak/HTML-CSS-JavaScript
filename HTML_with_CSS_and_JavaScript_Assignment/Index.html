@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Author: (Wiktor Kubasiak) -->
+<!-- Assessment 3 - JavaScript -->
+<html lang="en-IE">
+	<head>
+		<link rel="stylesheet" type="text/css" href="Styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>Justice League</title>
+	</head>
+	<body>
+		<header>
+			<h1>The Justice League</h1>
+		</header>
+		<main>
+			<div id="left">
+				<button type="button" id="drop" onclick="expand()">Interesting Links</button>
+			<div class="hide" id="expandingMenu">
+				<a class="subMenu" href="http://www.imdb.com/title/tt0974015/">The latest movie</a>
+				<a class="subMenu" href="http://www.justiceleaguethemovie.com/">The official site</a>
+			</div>
+				<form action="none" onsubmit="return false;">
+				<p><label>Rate this website:</label><p>
+				<input type="range" min="0" max="100" id="likeWebSite">
+				<p id="opinion"></p>
+				</form>
+			</div>
+			<script>
+				document.getElementById("likeWebSite").onchange = slide;
+				function slide() {
+					var w = document.getElementById("likeWebSite").value;
+					if (w > 66) {
+						document.getElementById("opinion").innerHTML = "Great work!";
+					}
+					else if (w > 33) {
+						document.getElementById("opinion").innerHTML = "It's okay";
+					}
+					else {
+						document.getElementById("opinion").innerHTML = "Not so good :(";
+					}
+				}
+				function expand() {
+					document.getElementById("expandingMenu").style.display = "block";
+				}
+				function chooseCharacter() {
+					var hero = Math.floor((Math.random() * 6) + 1);
+					if (hero == 1)
+					{
+						document.getElementById("content").innerHTML = "<h3>Wonder Woman</h3>" + "<img src='Wonder_Woman.jpg' alt='wonder_woman'>" + "<p><span>Alias:</span> Diana Prince</p>"
+						+ "<p><span>Birth Place:</span> Themyscira</p>" + "<p><span>Worked as:</span> Antiquities Dealer in the Luvre Museum</p>" + "<p><span>Main Enemy:</span> Cheetah</p>";
+						<!-- Image Source: https://wall.alphacoders.com/wallpaper.php?i=868147&w=400&h=300&type=crop -->
+					}
+					else if (hero == 2)
+					{
+						document.getElementById("content").innerHTML = "<h3>Batman</h3>" + "<img src='Batman.jpg' alt='batman'>" + "<p><span>Alias:</span> Bruce Wayne</p>"
+						+ "<p><span>Birth Place:</span> Gotham City</p>" + "<p><span>Worked as:</span> CEO of Wayne Enterprises</p>" + "<p><span>Main Enemy:</span> Joker</p>";
+						<!-- Image Source: https://wall.alphacoders.com/wallpaper.php?i=878605&w=400&h=300&type=crop -->
+					}
+					else if (hero == 3)
+					{
+						document.getElementById("content").innerHTML = "<h3>Superman</h3>" + "<img src='Superman.jpg' alt='superman'>" + "<p><span>Alias:</span> Clark Kent</p>"
+						+ "<p><span>Birth Place:</span> Planet Krypton</p>" + "<p><span>Worked as:</span> Investigative reporter of the Daily Planet</p>" + "<p><span>Main Enemy:</span> Lex Luthor</p>";
+						<!-- Image Source: https://wall.alphacoders.com/wallpaper.php?i=862873&w=400&h=300&type=crop -->
+					}
+					else if (hero == 4)
+					{
+						document.getElementById("content").innerHTML = "<h3>Aquaman</h3>" + "<img src='Aquaman.jpg' alt='aquaman'>" + "<p><span>Alias:</span> Arthur Curry</p>"
+						+ "<p><span>Birth Place:</span> Atlantis</p>" + "<p><span>Worked as:</span> Monarch</p>" + "<p><span>Main Enemy:</span> Black Manta</p>";
+						<!-- Image Source: https://wall.alphacoders.com/wallpaper.php?i=815047&w=400&h=300&type=crop -->
+					}
+					else if (hero == 5)
+					{
+						document.getElementById("content").innerHTML = "<h3>Cyborg</h3>" + "<img src='Cyborg.jpg' alt='cyborg'>" + "<p><span>Alias:</span> Victor Stone</p>"
+						+ "<p><span>Birth Place:</span> New York City</p>" + "<p><span>Worked as:</span> College Athlete</p>" + "<p><span>Main Enemy:</span> Ron Evers</p>";
+						<!-- Image Source: https://wall.alphacoders.com/wallpaper.php?i=815402&w=400&h=300&type=crop -->
+					}
+					else
+					{
+						document.getElementById("content").innerHTML = "<h3>The Flash</h3>" + "<img src='The_Flash.jpg' alt='the_flash'>" + "<p><span>Alias:</span> Barry Allen</p>"
+						+ "<p><span>Birth Place:</span> Iowa</p>" + "<p><span>Worked as:</span> Forensic Scientist</p>" + "<p><span>Main Enemy:</span> Reverse Flash</p>";
+						<!-- Image Source: https://wall.alphacoders.com/wallpaper.php?i=874708&w=400&h=300&type=crop -->
+					}
+				}
+			</script>
+			<div id="centre">
+				<h2>Who is your favourite hero of the Justice League?</h2>
+				<img src="Justice_League.jpg" alt="The Justice League"> <!-- Image Source: https://wall.alphacoders.com/wallpaper.php?i=721135&w=600&h=400&type=crop -->
+				<button type="button" id="character" onclick="chooseCharacter()">Choose Your Hero</button>
+				<div id="content"></div>
+			</div>
+		</main>
+		<footer>
+			<details>
+			<summary>&copy; 2017 Wiktor Kubasiak</summary>
+			All books, titles, characters, character names, slogans, logos, and related indicia
+			are trademarks of and copyright DC Comics and/or WildStorm Productions, an imprint of
+			DC Comics.
+			</details>
+		</footer>
+	</body>
+</html>
