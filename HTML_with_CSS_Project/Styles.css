@@ -1,0 +1,201 @@
+div.left{
+	float: left;
+	width: 20%;
+	margin: 10px;
+	padding: 10px;
+	}
+div.centre{
+	float: left;
+	width: 33%;
+	margin: 10px;
+	padding: 10px;
+	}
+div.right{
+	float: left;
+	width: 33%;
+	margin: 10px;
+	padding: 10px;
+	}
+hr{
+	clear: left;
+	border: 2px inset #004f99;
+	}
+body{
+	width: 90%;
+	margin: 15px;
+	padding: 15px;
+	}
+main{
+	overflow: auto;
+	margin: 5px;
+	padding: 5px;
+	}
+header{
+	margin: 8px;
+	padding: 8px;
+	background-color: Grey;
+	}
+footer{
+	clear: left;
+	margin: 8px;
+	padding: 8px;
+	background-color: Grey;
+	color: Green;
+	line-height: 180%;
+	}
+nav a{
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	font-family: "Open Sans";
+	border: 5px outset;
+	border-radius: 0.5em;
+	color: DarkGreen;
+	background-color: Black;
+	width: 10%;
+	}
+nav a:hover{
+	color: DarkBlue;
+	}
+nav a:active{
+	color: DarkRed;
+	}
+h1{
+	font-family: Georgia;
+	font-size: 2em;
+	color: Green;
+	font-style: oblique;
+	}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+li{
+	margin: 7px;
+	padding: 7px;
+	}
+li a{
+	text-decoration: none;
+	color: #006600;
+	font-family: Tahoma;
+	}
+li a:hover{
+	color: #0000b3;
+	}
+h1::first-letter{
+	font-size: 200%;
+	}
+#country{
+	background: linear-gradient(black, red, yellow);
+	}
+.left_title{
+	font-size: 125%;
+	font-family: "Book Antiqua";
+	color: #002699;
+	}
+p{
+	font-family: "Patrick Hand", cursive;
+	font-size: 1.1em;
+	color: #004d00;
+	}
+html{
+	background-color: #10100a;
+	}
+h2, h3{
+	color: #002699;
+	}
+h2{
+	font-size: 1.9em;
+	font-family: "Noto Sans", sans-serif;
+	}
+h3{
+	font-size: 1.4em;
+	font-family: "Merriweather", serif;
+	}
+abbr{
+	text-decoration: underline;
+	}
+footer a{
+	color: #002699;
+	}
+footer a:hover{
+	color: #006622;
+	}
+table, th, td{
+	border: 3px solid #264d00;
+	margin: auto;
+	color: rgb(0, 92, 179);
+	width: 45%;
+	}
+tr{
+	text-align: center;
+	}
+table{
+	border-collapse: collapse;
+	}
+caption{
+	font-size: 1.8em;
+	}
+th{
+	height: 40px;
+	font-size: 1.3em;
+	}
+td{
+	height: 25px;
+	}
+th, td{
+	padding: 2.5px;
+	}
+tr:hover{
+	background-color: #00e600;
+	}
+legend{
+	color: #001a66;
+	font-size: 1.5em;
+	}
+fieldset{
+	border: 4px inset #009900;
+	}
+input{
+	background-color: rgb(76, 76, 52);
+	border: 2px groove #4747d1;
+	color: #cc9900;
+	}
+select{
+	background-color: #004080;
+	}
+button{
+	color: Green;
+	background-color: White;
+	border: 6px outset #0083b3;
+	}
+address{
+	color: #3385ff;
+	font-size: 1.15em;
+	}
+.p1contact{
+	font-size: 1.25em;
+	color: #739900;
+	}
+.p2contact{
+	font-size: 1.25em;
+	color: #739900;
+	}
+.p1excursions{
+	font-size: 1.25em;
+	color: #739900;
+	}
+main p a{
+	text-decoration: none;
+	color: #3385ff;
+	font-size: 1.15em;
+	}
+iframe{
+	border: 8px double DarkGreen;
+	border-radius: 18px;
+	}
+.twitter-tweet{
+	border: 8px double DarkGreen;
+	border-radius: 18px;
+	}
